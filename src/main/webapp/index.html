@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
+
+</head>
+<body ng-controller="AccountCtrl">
+	<div>
+		<ul>
+			<li ng-repeat="account in accounts">{{ account.name }}</li>
+		</ul>
+	</div>
+	
+	<script src="js/app.js"></script>
+	<script src="js/services/account-service.js"></script>
+	<script src="js/controllers/account-controller.js"></script>
+</body>
+</html>
